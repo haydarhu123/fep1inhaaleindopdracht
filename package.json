@@ -1,0 +1,20 @@
+{
+  "name": "fep1inhaaleindopdracht",
+  "version": "1.0.0",
+  "description": "eindopdracht fep 1 inhaal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/webServer.js"
+  },
+  "keywords": [
+    "fep1inhaal",
+    "eindopdr"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}

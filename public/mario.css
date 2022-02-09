@@ -1,0 +1,92 @@
+.body{
+    background-color: rgb(3, 19, 39);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.section-header h2 {
+    font-weight: bold;
+    font-size: 34px;
+    margin-top: 50px;}
+
+.section-header h4 {
+        font-size: 27px;
+        margin-top: 57px;
+}
+.jumbotron{
+    height: 600px;
+}
+.grid{
+    width: 100%;
+    display: flex;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 90px;
+}
+img hover {
+    display: none;
+    margin: 70px auto;
+    padding: 20px;
+    background: #11A0DC;
+    border-radius: 25px;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+    right: 10%;
+    bottom: 5%;
+    position: absolute;
+    transition: all 5s ease-in-out;
+    z-index: 1;
+}
+button, select {
+    height: 50px;
+    width: 125px;
+    background-color: #ff0000;
+    border-color: black;
+}
+.popup {
+    display: none;
+    margin: 70px auto;
+    padding: 20px;
+    background: #ff0000;
+    border-radius: 25px;
+    width: 1020px;
+    height: 250px;
+    left: 10%;
+    right: 10%;
+    bottom: 5%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    z-index: 1;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 95%;
+    overflow: auto;
+}
+.toelichtingModal:hover{
+    cursor: pointer;
+}
