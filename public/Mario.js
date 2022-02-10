@@ -14,6 +14,7 @@ const API_URL = `https://www.amiiboapi.com/api/amiibo`;
                  // hier filter ik op karakter, gameserie en amiboserie
                  const filteredCharactersandseries = data.amiibo.filter((c) => {
                      return (
+                       // hier worden de karakters en de series die worden opgehaald ook omgezet naar lowercase dus kleine letters.
                          c.character.toLowerCase().includes(searchString) ||
                          c.amiiboSeries.toLowerCase().includes(searchString) ||
                          c.gameSeries.toLowerCase().includes(searchString)
@@ -58,12 +59,12 @@ function displayData(data){
       temp += '<td><button onclick ="openInformatie(\''+itemData.image+'\')" ">Meer informatie</td></tr>';
 
       temp += '<tr class =popup id="'+itemData.image+'" >';
-      temp += '<td>foto: <img src="'+itemData.image+'"></td>';
-      temp += "<td>amibo serie: " + itemData.amiiboSeries + "</td>";
-      temp += "<td>karakter:" + itemData.character + "</td>";
-      temp += "<td>game serie: " + itemData.gameSeries + "</td>";
-      temp += "<td>releasedatum Europa: " + itemData.release.eu + "</td>";
-      temp += "<td>type: " + itemData.type + "</td>";
+      temp += '<td>Foto: <img src="'+itemData.image+'"></td>';
+      temp += "<td>Amibo serie: " + itemData.amiiboSeries + "</td>";
+      temp += "<td>Karakter:" + itemData.character + "</td>";
+      temp += "<td>Game serie: " + itemData.gameSeries + "</td>";
+      temp += "<td>Releasedatum Europa: " + itemData.release.eu + "</td>";
+      temp += "<td>Type: " + itemData.type + "</td>";
       
       temp += '<td><button onclick =" closeInformatie(\''+itemData.image+'\')" ">Sluiten</td></tr>';
 
